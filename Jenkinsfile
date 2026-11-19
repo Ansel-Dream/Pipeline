@@ -1,6 +1,10 @@
 pipeline {
     agent any
 
+   environment {
+        APP = "First-Jenkins-Pipeline"
+    }
+    
     stages {
         // First Stage
         stage('Hello') {
@@ -12,7 +16,7 @@ pipeline {
         // Second Stage
         stage('How?') {
             steps {
-                echo 'How Are you buddy?'
+                echo 'How Are you ${APP}'
             }
         }
         
