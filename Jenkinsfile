@@ -19,7 +19,7 @@ pipeline {
         // Third Stage
         stage('going?') {
             steps {
-                echo 'How are you doing?'
+                echo 'The current git commit is ${GIT_COMMIT}'
             }
         }
         
