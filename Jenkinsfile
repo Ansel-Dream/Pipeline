@@ -26,7 +26,7 @@ pipeline {
         stage('going?') {
             steps {
                 script{
-                    going()
+                    going("node-app")
                 }
             }
         }
