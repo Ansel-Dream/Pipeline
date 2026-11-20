@@ -1,5 +1,5 @@
 pipeline {
-    agent { label: "First" }
+    agent { label "First" }
 
    environment {
         APP = "First-Jenkins-Pipeline"
