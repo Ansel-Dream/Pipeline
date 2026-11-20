@@ -25,7 +25,9 @@ pipeline {
         // Third Stage
         stage('going?') {
             steps {
-                echo "The current git commit is ${GIT_COMMIT}"
+                script{
+                    going()
+                }
             }
         }
         
