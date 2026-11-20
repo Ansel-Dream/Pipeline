@@ -1,3 +1,5 @@
+@Library("mysharedLib") _
+
 pipeline {
     agent { label "First" }
 
@@ -30,7 +32,9 @@ pipeline {
         // Final Stage
         stage('GoodBye') {
             steps {
-                echo 'SO good to see you, Bye!'
+                script {
+                    bye()
+                }
             }
         }
     }
