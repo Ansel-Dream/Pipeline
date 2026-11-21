@@ -37,7 +37,7 @@ pipeline {
                     usernamePassword(
                         credentialsId: 'Github_Token',
                         usernameVariable: 'USERNAME',
-                        passwordVaribale: 'PASSWORD'
+                        passwordVariable: 'PASSWORD'
                     )
                 ]) {
                 
