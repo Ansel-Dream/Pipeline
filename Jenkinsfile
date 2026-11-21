@@ -33,6 +33,12 @@ pipeline {
 
         stage('Printing Channel Name') {
             steps{
+                withCredentials([
+                    string(
+                        credentialsId: 'CNAME'
+                    )
+                ])
+                
                 echo "Your Channel name is ${CNAME}"
             }
         }
