@@ -34,13 +34,14 @@ pipeline {
         stage('Printing Channel Name') {
             steps{
                 withCredentials([
-                    string(
-                        credentialsId: 'CNAME',
-                        variable: 'Channel_name'
+                    usernamePassword(
+                        credentialsId: 'Github_Token',
+                        usernameVariable: 'USERNAME',
+                        passwordVaribale: 'PASSWORD'
                     )
                 ]) {
                 
-                echo "Your Channel name is ${Channel_name}"
+                echo "Your username is: ${USERNAME} and your password is:${PASSWORD}"
                 }
             }
         }
