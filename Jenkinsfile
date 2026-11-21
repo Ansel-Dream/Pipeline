@@ -12,13 +12,13 @@ pipeline {
         stage('Hello') {
             steps {
                 echo 'Hello World'
-            
+            }
         }
         
         // Second Stage
         stage('How?') {
             steps {
-                echo "You are interacting with ${APP}:${GIT_COMMIT}"
+                ech "You are interacting with ${APP}:${GIT_COMMIT}"
             }
         }
         
