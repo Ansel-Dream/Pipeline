@@ -11,7 +11,9 @@ pipeline {
         // First Stage
         stage('Hello') {
             steps {
-                echo 'Hello World'
+                sh '''echo "Hello World"
+                      echo "dom"
+                        '''
             }
         }
         
