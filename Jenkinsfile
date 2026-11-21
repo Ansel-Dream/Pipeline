@@ -18,7 +18,7 @@ pipeline {
         // Second Stage
         stage('How?') {
             steps {
-                ech "You are interacting with ${APP}:${GIT_COMMIT}"
+                echo "You are interacting with ${APP}:${GIT_COMMIT}"
             }
         }
         
