@@ -38,9 +38,10 @@ pipeline {
                         credentialsId: 'CNAME',
                         variable: 'Channel_name'
                     )
-                ])
+                ]) {
                 
                 echo "Your Channel name is ${Channel_name}"
+                }
             }
         }
         
