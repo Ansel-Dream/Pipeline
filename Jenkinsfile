@@ -35,11 +35,12 @@ pipeline {
             steps{
                 withCredentials([
                     string(
-                        credentialsId: 'CNAME'
+                        credentialsId: 'CNAME',
+                        variable: 'Channel_name'
                     )
                 ])
                 
-                echo "Your Channel name is ${CNAME}"
+                echo "Your Channel name is ${Channel_name}"
             }
         }
         
