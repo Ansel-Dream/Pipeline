@@ -30,6 +30,12 @@ pipeline {
                 }
             }
         }
+
+        stage('Printing Channel Name') {
+            steps{
+                echo "Your Channel name is ${CNAME}"
+            }
+        }
         
         // Final Stage
         stage('GoodBye') {
